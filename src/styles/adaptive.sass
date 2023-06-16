@@ -34,7 +34,7 @@
 		width: 750px
 
 	.footer_top
-		flex-direction: column-reverse
+		flex-direction: column
 		gap: 25px
 
 	.footer_top-info--contacts
@@ -100,6 +100,8 @@
 	.container
 		max-width: 450px
 
+	.mobile_ul
+		width: 455px
 	.main
 		padding: 0 0 25px
 		flex-direction: column
@@ -109,7 +111,7 @@
 		gap: 80px
 
 	.main-img
-		width: 75%
+		width: 85%
 
 	.blog
 		padding-top: 0
@@ -169,3 +171,79 @@
 
 	.footer_bottom-list--item:last-of-type
 		margin-right: 20px
+
+@media (max-width: 480px)
+	.container
+		max-width: 320px
+
+	.mobile_ul
+		width: 320px
+		left: -15px
+
+	.main
+		justify-content: normal
+		gap: 60px
+		padding-bottom: 0
+
+	.main-img
+		width: 100%
+
+	.main_info-title
+		font-size: 38px
+		line-height: 56px
+
+	.main_info-tools
+		gap: 10px
+
+	.main_info-tools--btn
+		width: 100px
+
+	.service_text
+		font-size: 15px
+		line-height: 24px
+
+	.service_technology-item--title
+		font-size: 22px
+
+	.service_technology-item--text
+		font-size: 15px
+
+	.blog
+		display: none
+
+	.about
+		padding-bottom: 80px
+
+	.about_text
+		font-size: 15px
+
+	.subscribe_form-input
+		width: 280px
+		padding: 18px 110px 18px 18px
+
+		&::placeholder
+			font-size: 13px
+
+	.subscribe_form-btn
+		width: 100px
+		margin-left: -107px
+		line-height: 15px
+
+		img
+			display: none
+
+	.footer_top-list
+		gap: 0 10px
+		flex-direction: column
+		align-items: flex-start
+
+	.footer_top-list--item--ul
+		grid-template-columns: repeat(2, 1fr)
+		gap: 5px 15px
+
+	.footer_top-list--item--ul--li
+		font-size: 12px
+
+	.footer_bottom
+		flex-direction: column
+		gap: 10px
