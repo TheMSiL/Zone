@@ -1,0 +1,67 @@
+@keyframes pulse
+	0%
+		transform: scale(1)
+
+	50%
+		transform: scale(1.1)
+
+	100%
+		transform: scale(1)
+
+.subscribe
+	padding: 50px 5px 38px
+	background: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%)
+	box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05)
+	border-radius: 34px
+	text-align: center
+
+	&_title
+		@include section-title(13px)
+
+	&_text
+		line-height: 30px
+		opacity: 0.8
+		margin-bottom: 29px
+
+	&_form
+		display: flex
+		align-items: center
+		justify-content: center
+		&-input
+			background: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%)
+			box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07)
+			border-radius: 70px
+			width: 860px
+			padding: 25px 225px 25px 44px
+			font-size: 18px
+			line-height: 30px
+			color: #FFFFFF
+			border: 1px solid transparent
+			transition: 500ms ease
+
+			&:focus
+				border: 1px solid #FFFFFF
+
+			&::placeholder
+				font-size: 18px
+				line-height: 30px
+				color: #FFFFFF
+				opacity: 0.9
+
+		&-btn
+			background: $btn-bg
+			opacity: 0.9
+			border-radius: 70px
+			width: 196px
+			padding: 15px 0
+			font-size: 20px
+			line-height: 30px
+			color: #FFFFFF
+			margin-left: -210px
+			position: relative
+			overflow: hidden
+
+			&:hover
+				animation: pulse infinite 2s ease-in-out
+			img
+				margin-right: 8px

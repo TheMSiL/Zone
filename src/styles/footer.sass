@@ -1,0 +1,94 @@
+.footer
+	margin-top: 98px
+	padding-bottom: 36px
+
+	&_top
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+		&-info
+
+			&--contacts
+				margin: 15px 0
+
+				&--item
+					display: flex
+					align-items: center
+					gap: 15px
+					line-height: 32px
+					color: rgba(255, 255, 255, 0.8)
+					&:not(:last-of-type)
+						margin-bottom: 10px
+
+				&--socials
+					display: flex
+					align-items: center
+					gap: 15px
+
+					a
+						transition: 500ms ease
+
+						&:hover
+							transform: scale(125%)
+
+		&-list
+			display: flex
+			align-items: center
+			justify-content: space-between
+			gap: 50px
+
+			&--item
+
+				&--title
+					font-size: 20px
+					line-height: 40px
+					letter-spacing: 0.01em
+				&--ul
+					display: grid
+
+					&--li
+						font-size: 18px
+						line-height: 40px
+						letter-spacing: 0.01em
+						color: rgba(255, 255, 255, 0.8)
+						transition: 500ms ease
+
+						&:hover
+							color: #FFFFFF
+							transform: scale(105%)
+
+	&_bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		&-copy
+			font-size: 14px
+			line-height: 14px
+			color: rgba(255, 255, 255, 0.8)
+
+		&-list
+			display: flex
+			align-items: center
+			gap: 53px
+			&--item
+				font-size: 14px
+				line-height: 14px
+				color: rgba(255, 255, 255, 0.8)
+				padding: 5px 0
+				border-bottom: 1px solid transparent
+				transition: all 650ms ease
+
+				&:hover
+					transform: translateY(-10%)
+					border-bottom: 1px solid rgba(255, 255, 255, 0.8)
+
+				&:last-of-type
+					margin-right: 40px
+
+	&_separator
+		margin: 33px 0 25px
+		height: 1px
+		background: #969696
+		opacity: 0.2

@@ -1,0 +1,83 @@
+.header
+	height: 80px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: sticky
+	z-index: 2
+	background: #111727
+	top: 0
+
+	&-ul, .burger-ul
+		display: flex
+		align-items: center
+		gap: 60px
+		z-index: 2
+		position: relative
+
+		&--li
+			font-weight: 500
+			font-size: 14px
+			line-height: 18px
+			color: #F9FAFB
+			border-bottom: 1px solid transparent
+			padding-top: 5px
+			padding-bottom: 5px
+			transition: 500ms ease-in-out
+
+			&:hover
+				border-bottom: 1px solid #F9FAFB
+
+	&-btn
+		width: 132px
+		height: 42px
+		background: $btn-bg
+		border-radius: 5px
+		font-size: 14px
+		line-height: 18px
+		color: #F9FAFB
+		cursor: pointer
+		transition: 500ms ease
+
+		&:hover
+			transform: translateY(-5%)
+			box-shadow: 2px 2px 0 rgba(99, 10, 243, 0.568)
+
+.mobile_ul
+	width: 80vw
+	height: 101vw
+	background: #111727
+	position: absolute
+	top: 0
+	left: -10px
+	display: flex
+	justify-content: center
+	align-items: center
+	z-index: 2
+
+.burger-menu
+	position: absolute
+	z-index: 3
+	top: 30px
+	right: 0
+	display: none
+	gap: 3px
+
+	&-item
+		display: block
+		width: 20px
+		height: 4px
+		border-radius: 30px
+		background: linear-gradient(89.83deg, #2563EB 0.11%, #D946EF 58.65%)
+		transition: 500ms ease
+
+	&--1
+		transform: rotate(45deg)
+		margin-top: 6px
+
+	&--2
+		display: none
+
+	&--3
+		transform: rotate(-45deg)
+		margin-top: -6px
